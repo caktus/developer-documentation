@@ -59,6 +59,26 @@ Microsoft   Internet Explorer       9               C
 Microsoft   Internet Explorer       8 and below     D
 =========   ===================     ===========     =====
 
+Target Layouts
+==============
+
+Alongside our starting set of supported browsers every project begins with a starting set of
+target layouts to be both designed and developed for. We do not want to prescribe a concrete set of
+breakpoints for Desktop, Mobile, and Tablet devices and possibly requiring multiple breakpoints for
+some or all of those device types.
+
+Instead, every project should include at least one target layout for Desktop browsers and one
+target layout for Mobile browsers. The layout for mobile browsers should also apply to tablet
+devices, unless there is are specific components in the layout that have to be lost on mobile but
+are important enough to warrant extra layouts to add on tablets. This should be carefully
+considered.
+
+Down to specific breakpoints, it is recommended they be considered on a per-component basis. Rather
+than defining global breakpoints for the entire site at some specific screen width, it would be
+preferable to look at each component being built and outline the breakpoints that make sense for it,
+starting at the highest level components like a top nav bar, site and page headers, and the site
+footer. 
+
 Update Policy
 =============
 
